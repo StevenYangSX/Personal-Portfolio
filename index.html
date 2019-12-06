@@ -23,11 +23,15 @@
   <body>
     <div class="side-navbar">
       <div class="name-card">
-        <a href="#content" class="name-card-content">
+        <a href="#content" class="name-card-content hide-on-small">
           <h2>Shixin Yang</h2>
           <hr />
           <h6>Front End Developer</h6>
           <h6>Software Engineer</h6>
+        </a>
+        <a href="#content" class="name-card-content hide-on-large">
+          <h2>Shixin Yang</h2>
+          <h6>Front End Developer</h6>
         </a>
       </div>
       <div class="side-nav">
@@ -55,7 +59,14 @@
     <!-- right-side-content-section -->
     <div class="content" id="content">
       <div class="showcase">
-        <h2>There will be some text here</h2>
+        <div class="showcase-text">
+          <h3>
+            Engaging, Learning
+          </h3>
+          <h3>
+            Improving, Achieving
+          </h3>
+        </div>
       </div>
 
       <!-- about-section -->
@@ -63,25 +74,19 @@
         <h2>about</h2>
       </div>
 
-      <div class="about-content">
-        <h2>About</h2>
-        <h3>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, quae.
-        </h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
-          consectetur in. Assumenda corporis quidem error cumque voluptatem qui
-          neque a, labore, accusamus quasi natus, facere inventore nesciunt?
-          Nam, aliquam laboriosam.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-          asperiores a, totam nobis velit, expedita esse iste sit illum ab
-          consequuntur quidem. Dolorum accusantium natus ut est quibusdam
-          voluptatibus omnis dolorem, temporibus commodi sint repellendus, velit
-          a officia ab eos ipsum assumenda, eveniet quia fugit cupiditate! Non
-          facilis consectetur itaque.
-        </p>
+      <div class="container text-center">
+        <div class="about-content">
+          <div class="about-card">
+            <p>
+              I am a recently granduated student from Simon Fraser University
+              major in Computer Science with concentration of Computer System
+              and Infromation System. Currently, I'm focusing on web development
+              to become a full-stack developer. Desire to learn, team-work
+              friendly, independent problem solver. I also want to record my
+              growth path with this website just to motivate myself.
+            </p>
+          </div>
+        </div>
       </div>
 
       <!-- projects-section -->
@@ -100,16 +105,12 @@
         </div>
 
         <div class="projects-list">
-          <div class="project-card front-end">
-            <div class="project-img-container">
-              <img
-                src="./img/project.png"
-                alt="Image Here"
-                class="project-img"
-              />
+          <!-- <div class="project-card front-end">
+            <div class="project-img-container"></div>
+            <div class="project-title">
+              <h3>HTML5/CSS3 Ensentials</h3>
             </div>
             <hr />
-            <h4>HTML5/CSS3 Ensentials</h4>
             <div class="project-details">
               <p>
                 This project is a series of fundamentals of web development. It
@@ -121,19 +122,35 @@
               <button>Github</button>
               <button>Link Here</button>
             </div>
+          </div> -->
+          <div class="project-card front-end">
+            <div class="title">
+              <div class="project-img-container"></div>
+              <div class="project-title">
+                <h3>HTML5/CSS3 Ensentials</h3>
+              </div>
+              <hr />
+              <div class="project-details">
+                <p>
+                  This project is a series of fundamentals of web development.
+                  It reviewed all basic HTML5/ CSS3 concepts and focus on
+                  Flex-box and Grid System.
+                </p>
+              </div>
+              <div class="project-links">
+                <a class="btn btn-light"><i class="fab fa-github"></i></a>
+                <a class="btn btn-light"><i class="fab fa-chrome"></i></a>
+              </div>
+            </div>
           </div>
 
           <div class="project-card front-end">
             <div class="title">
-              <div class="project-img-container">
-                <img
-                  src="./img/project.png"
-                  alt="Image Here"
-                  class="project-img"
-                />
+              <div class="project-img-container"></div>
+              <div class="project-title">
+                <h3>Vanilla JavaScript Ensentials</h3>
               </div>
               <hr />
-              <h4>Vanilla JavaScript Ensentials</h4>
               <div class="project-details">
                 <p>
                   This series of single page applications built with vanilla
@@ -143,8 +160,8 @@
                 </p>
               </div>
               <div class="project-links">
-                <button>Github</button>
-                <button>Link Here</button>
+                <a class="btn btn-light"><i class="fab fa-github"></i></a>
+                <a class="btn btn-light"><i class="fab fa-chrome"></i></a>
               </div>
             </div>
           </div>
@@ -152,14 +169,42 @@
           <div class="project-card front-end">
             <div class="title">
               <div class="project-img-container">
-                <img
+                <!-- <img
                   src="./img/project.png"
                   alt="Image Here"
                   class="project-img"
-                />
+                /> -->
+              </div>
+              <div class="project-title">
+                <h3>Social Network Website Theme by Sass</h3>
               </div>
               <hr />
-              <h3>jQuery Cheet</h3>
+              <div class="project-details">
+                <p>
+                  A web theme styled with SaSS. It has different Theme color to
+                  choose and all mixin and functions make the web responsive.
+                </p>
+              </div>
+              <div class="project-links">
+                <a class="btn btn-light"><i class="fab fa-github"></i></a>
+                <a class="btn btn-light"><i class="fab fa-chrome"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card front-end">
+            <div class="title">
+              <div class="project-img-container">
+                <!-- <img
+                  src="./img/project.png"
+                  alt="Image Here"
+                  class="project-img"
+                /> -->
+              </div>
+              <div class="project-title">
+                <h3>jQuery Cheet</h3>
+              </div>
+              <hr />
               <div class="project-details">
                 <p>
                   jQuery is still an important part of front-end development
@@ -170,8 +215,8 @@
                 </p>
               </div>
               <div class="project-links">
-                <button>Github</button>
-                <button>Link Here</button>
+                <a class="btn btn-light"><i class="fab fa-github"></i></a>
+                <a class="btn btn-light"><i class="fab fa-chrome"></i></a>
               </div>
             </div>
           </div>
@@ -179,14 +224,16 @@
           <div class="project-card front-end">
             <div class="title">
               <div class="project-img-container">
-                <img
+                <!-- <img
                   src="./img/project.png"
                   alt="Image Here"
                   class="project-img"
-                />
+                /> -->
+              </div>
+              <div class="project-title">
+                <h3>Netflix Landing Page Copy</h3>
               </div>
               <hr />
-              <h3>Netflix Landing Page Copy</h3>
               <div class="project-details">
                 <p>
                   This project copies Netflix official landing page without any
@@ -195,8 +242,8 @@
                 </p>
               </div>
               <div class="project-links">
-                <button>Github</button>
-                <button>Link Here</button>
+                <a class="btn btn-light"><i class="fab fa-github"></i></a>
+                <a class="btn btn-light"><i class="fab fa-chrome"></i></a>
               </div>
             </div>
           </div>
@@ -204,14 +251,16 @@
           <div class="project-card react">
             <div class="title">
               <div class="project-img-container">
-                <img
+                <!-- <img
                   src="./img/project.png"
                   alt="Image Here"
                   class="project-img"
-                />
+                /> -->
+              </div>
+              <div class="project-title">
+                <h3>Fake Store</h3>
               </div>
               <hr />
-              <h3>Fake Store</h3>
               <div class="project-details">
                 <p>
                   A fake online shopping store designed for MERN stack
@@ -221,8 +270,18 @@
                 </p>
               </div>
               <div class="project-links">
-                <button>Github</button>
-                <button>Link Here</button>
+                <a
+                  class="btn btn-light"
+                  href="https://github.com/StevenYangSX/Fake-Store"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  class="btn btn-light"
+                  href="https://mysterious-oasis-16008.herokuapp.com/"
+                  target="_blank"
+                  ><i class="fab fa-chrome"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -230,14 +289,16 @@
           <div class="project-card react">
             <div class="title">
               <div class="project-img-container">
-                <img
+                <!-- <img
                   src="./img/project.png"
                   alt="Image Here"
                   class="project-img"
-                />
+                /> -->
+              </div>
+              <div class="project-title">
+                <h3>AI Stock Manager</h3>
               </div>
               <hr />
-              <h3>AI Stock Manager</h3>
               <div class="project-details">
                 <p>
                   A simple application that checks and analizes stock price of
@@ -246,8 +307,13 @@
                 </p>
               </div>
               <div class="project-links">
-                <button>Github</button>
-                <button>Link Here</button>
+                <a
+                  class="btn btn-light"
+                  href="https://github.com/StevenYangSX/AI-Stock"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a class="btn btn-light"><i class="fab fa-chrome"></i></a>
               </div>
             </div>
           </div>
@@ -255,14 +321,16 @@
           <div class="project-card react">
             <div class="title">
               <div class="project-img-container">
-                <img
+                <!-- <img
                   src="./img/project.png"
                   alt="Image Here"
                   class="project-img"
-                />
+                /> -->
+              </div>
+              <div class="project-title">
+                <h3>Contact Keeper</h3>
               </div>
               <hr />
-              <h3>Contact Keeper</h3>
               <div class="project-details">
                 <p>
                   Keep contact information as you need. It is supported by its
@@ -271,8 +339,18 @@
                 </p>
               </div>
               <div class="project-links">
-                <button>Github</button>
-                <button>Link Here</button>
+                <a
+                  class="btn btn-light"
+                  href="https://github.com/StevenYangSX/Contacts-Keeper"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  class="btn btn-light"
+                  href="https://thawing-badlands-76524.herokuapp.com/"
+                  target="_blank"
+                  ><i class="fab fa-chrome"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -280,14 +358,16 @@
           <div class="project-card react">
             <div class="title">
               <div class="project-img-container">
-                <img
+                <!-- <img
                   src="./img/project.png"
                   alt="Image Here"
                   class="project-img"
-                />
+                /> -->
+              </div>
+              <div class="project-title">
+                <h3>Github User Finder</h3>
               </div>
               <hr />
-              <h3>Github User Finder</h3>
               <div class="project-details">
                 <p>
                   A basic React application that check intended Github users and
@@ -295,22 +375,23 @@
                 </p>
               </div>
               <div class="project-links">
-                <button>Github</button>
-                <button>Link Here</button>
+                <a
+                  class="btn btn-light"
+                  href="https://github.com/StevenYangSX/React-Github-User-Finder"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a class="btn btn-light"><i class="fab fa-chrome"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="project-card back-end">
-            <div class="project-img-container">
-              <img
-                src="./img/project.png"
-                alt="Image Here"
-                class="project-img"
-              />
+          <!-- <div class="project-card back-end">
+            <div class="project-img-container"></div>
+            <div class="project-title">
+              <h3>Python Crash Course</h3>
             </div>
             <hr />
-            <h3>Python Crash Course</h3>
             <div class="project-details">
               <p>
                 A 4-week course aims to get myself familar with Python,
@@ -322,19 +403,35 @@
               <button>Github</button>
               <button>Link Here</button>
             </div>
+          </div> -->
+          <div class="project-card back-end">
+            <div class="title">
+              <div class="project-img-container"></div>
+              <div class="project-title">
+                <h3>Python Crash Course</h3>
+              </div>
+              <hr />
+              <div class="project-details">
+                <p>
+                  A 4-week course aims to get myself familar with Python,
+                  especially Object-Oriented Design. Get ready for back-end
+                  development.
+                </p>
+              </div>
+              <div class="project-links">
+                <a class="btn btn-light"><i class="fab fa-github"></i></a>
+                <a class="btn btn-light"><i class="fab fa-chrome"></i></a>
+              </div>
+            </div>
           </div>
 
           <div class="project-card back-end">
             <div class="title">
-              <div class="project-img-container">
-                <img
-                  src="./img/project.png"
-                  alt="Image Here"
-                  class="project-img"
-                />
+              <div class="project-img-container"></div>
+              <div class="project-title">
+                <h3>Fake Store API</h3>
               </div>
               <hr />
-              <h3>Fake Store API</h3>
               <div class="project-details">
                 <p>
                   This is back-end API based on Express designed for Fake Store
@@ -344,22 +441,24 @@
                 </p>
               </div>
               <div class="project-links">
-                <button>Github</button>
-                <button>Link Here</button>
+                <a class="btn btn-light"><i class="fab fa-github"></i></a>
+                <a class="btn btn-light"><i class="fab fa-chrome"></i></a>
               </div>
             </div>
           </div>
 
           <div class="project-card tools">
             <div class="project-img-container">
-              <img
+              <!-- <img
                 src="./img/project.png"
                 alt="Image Here"
                 class="project-img"
-              />
+              /> -->
+            </div>
+            <div class="project-title">
+              <h3>First Project tools</h3>
             </div>
             <hr />
-            <h3>First Project tools</h3>
             <div class="project-details">
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -369,83 +468,60 @@
               </p>
             </div>
             <div class="project-links">
-              <button>Github</button>
-              <button>Link Here</button>
+              <a class="btn btn-light"><i class="fab fa-github"></i></a>
+              <a class="btn btn-light"><i class="fab fa-chrome"></i></a>
             </div>
           </div>
 
           <div class="project-card school">
             <div class="project-img-container">
-              <img
+              <!-- <img
                 src="./img/project.png"
                 alt="Image Here"
                 class="project-img"
-              />
+              /> -->
+            </div>
+            <div class="project-title">
+              <h3>Weather Prediction</h3>
             </div>
             <hr />
-            <h3>First Project school</h3>
             <div class="project-details">
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Sapiente repellat dicta modi fugit aut asperiores reprehenderit,
-                eos at non soluta explicabo, nemo nobis deserunt quos,
-                perferendis saepe reiciendis pariatur! Odit.
+                CMPT 318 Course Project that developed with Python(Numpy,
+                Pandas, sklearn and etc. ), which use Vancouver Airport Weather
+                data and picutures of the same spot in Downtown Vancouver to
+                analyse and predict future weather by machine learnig
+                algorithms.
               </p>
             </div>
             <div class="project-links">
-              <button>Github</button>
-              <button>Link Here</button>
+              <a class="btn btn-light"><i class="fab fa-github"></i></a>
             </div>
           </div>
 
           <div class="project-card school">
             <div class="title">
               <div class="project-img-container">
-                <img
+                <!-- <img
                   src="./img/project.png"
                   alt="Image Here"
                   class="project-img"
-                />
+                /> -->
+              </div>
+              <div class="project-title">
+                <h3>Android App: Walking Group</h3>
               </div>
               <hr />
-              <h3>Second Project school</h3>
               <div class="project-details">
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Sapiente repellat dicta modi fugit aut asperiores
-                  reprehenderit, eos at non soluta explicabo, nemo nobis
-                  deserunt quos, perferendis saepe reiciendis pariatur! Odit.
+                  CMPT 276 Course Project that developed by Android Studio. This
+                  application tracks users current position and reports it to
+                  who needs this information. Also, users can add friends and
+                  send messages to each other.
                 </p>
               </div>
               <div class="project-links">
-                <button>Github</button>
-                <button>Link Here</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card school">
-            <div class="title">
-              <div class="project-img-container">
-                <img
-                  src="./img/project.png"
-                  alt="Image Here"
-                  class="project-img"
-                />
-              </div>
-              <hr />
-              <h3>Third Project school</h3>
-              <div class="project-details">
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Sapiente repellat dicta modi fugit aut asperiores
-                  reprehenderit, eos at non soluta explicabo, nemo nobis
-                  deserunt quos, perferendis saepe reiciendis pariatur! Odit.
-                </p>
-              </div>
-              <div class="project-links">
-                <button>Github</button>
-                <button>Link Here</button>
+                <a class="btn btn-light"><i class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
@@ -453,25 +529,50 @@
           <div class="project-card school">
             <div class="title">
               <div class="project-img-container">
-                <img
+                <!-- <img
                   src="./img/project.png"
                   alt="Image Here"
                   class="project-img"
-                />
+                /> -->
+              </div>
+              <div class="project-title">
+                <h3>Modify Linux Kernal function</h3>
               </div>
               <hr />
-              <h3>Fourth Project school</h3>
               <div class="project-details">
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Sapiente repellat dicta modi fugit aut asperiores
-                  reprehenderit, eos at non soluta explicabo, nemo nobis
-                  deserunt quos, perferendis saepe reiciendis pariatur! Odit.
+                  CMPT 300,Operating System, course project which learns and
+                  modifies Linux kernal function. It focus on how kernal
+                  function works and how use can modify functions inside kernal.
                 </p>
               </div>
               <div class="project-links">
-                <button>Github</button>
-                <button>Link Here</button>
+                <a class="btn btn-light"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card school">
+            <div class="title">
+              <div class="project-img-container">
+                <!-- <img
+                  src="./img/project.png"
+                  alt="Image Here"
+                  class="project-img"
+                /> -->
+              </div>
+              <div class="project-title">
+                <h3>Tokenizer</h3>
+              </div>
+              <hr />
+              <div class="project-details">
+                <p>
+                  A application built with C++ to parse C language and check for
+                  syntax error.
+                </p>
+              </div>
+              <div class="project-links">
+                <a class="btn btn-light"><i class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
@@ -484,16 +585,16 @@
         <h2>Education</h2>
       </div>
 
-      <div class="education">
+      <div class="container education">
         <div class="education-card">
           <div class="school-name">
             <h2>Simon Fraser University</h2>
           </div>
           <div class="address">
-            Burnaby, BC, Canada
+            <h5>Burnaby, BC, Canada</h5>
           </div>
           <div class="degree">
-            B.S. in Computer Science
+            <h5>B.S. in Computer Science</h5>
           </div>
         </div>
       </div>
@@ -504,10 +605,24 @@
       </div>
       <div class="contact">
         <div class="contact-button">
-          <button>FaceBook</button>
-          <button>Email</button>
-          <button>LinkedIn</button>
-          <button>Github</button>
+          <a
+            href="https://www.linkedin.com/in/steven-yang-30063a193/"
+            target="_blank"
+            ><img class="icons" src="./img/linkedin.png" alt="" />
+          </a>
+          <a href="https://github.com/StevenYangSX" target="_blank"
+            ><img class="icons" src="./img/git.png" alt=""
+          /></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100007653738329"
+            target="_blank"
+            ><img class="icons" src="./img/facebook.png" alt=""
+          /></a>
+          <a
+            href="https://www.youtube.com/channel/UChVnG-8Nk6JPI5ZHvgmth2g?view_as=subscriber"
+            target="_blank"
+            ><img class="icons" src="./img/gmail.png" alt=""
+          /></a>
         </div>
       </div>
     </div>

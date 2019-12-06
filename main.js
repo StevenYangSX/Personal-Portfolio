@@ -20,7 +20,7 @@ $(document).ready(() => {
 
 
 $(document).ready(() => {
-    $('#front-end').on('click', () => {
+    $('#front-end').on('mouseover', () => {
         $('#front-end').css('background', 'lightgray');
 
         $('#react').css('background', 'white');
@@ -29,7 +29,7 @@ $(document).ready(() => {
         $('#school-projects').css('background', 'white');
 
 
-        $('.front-end').css('display', 'inline');
+        $('.front-end').css('display', 'flex');
         $('.react').css('display', 'none');
         $('.back-end').css('display', 'none');
         $('.tools').css('display', 'none');
@@ -39,7 +39,7 @@ $(document).ready(() => {
 
 
 $(document).ready(() => {
-    $('#react').on('click', () => {
+    $('#react').on('mouseover', () => {
         $('#react').css('background', 'lightgray');
 
         $('#front-end').css('background', 'white');
@@ -48,7 +48,7 @@ $(document).ready(() => {
         $('#school-projects').css('background', 'white');
 
 
-        $('.react').css('display', 'inline-block');
+        $('.react').css('display', 'flex');
         $('.front-end').css('display', 'none');
         $('.back-end').css('display', 'none');
         $('.tools').css('display', 'none');
@@ -57,7 +57,7 @@ $(document).ready(() => {
 })
 
 $(document).ready(() => {
-    $('#back-end').on('click', () => {
+    $('#back-end').on('mouseover', () => {
         $('#back-end').css('background', 'lightgray');
 
         $('#front-end').css('background', 'white');
@@ -66,7 +66,7 @@ $(document).ready(() => {
         $('#school-projects').css('background', 'white');
 
 
-        $('.back-end').css('display', 'inline-block');
+        $('.back-end').css('display', 'flex');
         $('.front-end').css('display', 'none');
         $('.react').css('display', 'none');
         $('.tools').css('display', 'none');
@@ -76,7 +76,7 @@ $(document).ready(() => {
 
 
 $(document).ready(() => {
-    $('#tools').on('click', () => {
+    $('#tools').on('mouseover', () => {
         $('#tools').css('background', 'lightgray');
 
         $('#front-end').css('background', 'white');
@@ -85,7 +85,7 @@ $(document).ready(() => {
         $('#school-projects').css('background', 'white');
 
 
-        $('.tools').css('display', 'inline-block');
+        $('.tools').css('display', 'flex');
         $('.front-end').css('display', 'none');
         $('.react').css('display', 'none');
         $('.back-end').css('display', 'none');
@@ -95,7 +95,7 @@ $(document).ready(() => {
 
 
 $(document).ready(() => {
-    $('#school-projects').on('click', () => {
+    $('#school-projects').on('mouseover', () => {
         $('#back-end').css('background', 'white');
 
         $('#front-end').css('background', 'white');
@@ -108,6 +108,6 @@ $(document).ready(() => {
         $('.front-end').css('display', 'none');
         $('.react').css('display', 'none');
         $('.tools').css('display', 'none');
-        $('.school').css('display', 'inline');
+        $('.school').css('display', 'flex');
     })
 })
