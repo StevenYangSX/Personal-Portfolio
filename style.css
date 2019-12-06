@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bar {
+  width: 100%;
+  height: 7vh;
+  background: rgb(31, 105, 89);
+}
+
+.bar h2 {
+  font-size: 3rem;
+  padding-top: 1.2rem;
+  padding-left: 0.5rem;
+  color: white;
+  text-align: left;
+}
+
+.side-navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 6px -6px rgb(168, 168, 168);
+  flex: 1;
+  height: 100vh;
+  width: 12rem;
+}
+
+.content {
+  background: rgb(255, 247, 247);
+  margin-left: 12rem;
+  flex: 5;
+}
+
+.name-card {
+  background: rgb(245, 244, 244);
+  flex: 1;
+  text-decoration: none !important;
+}
+
+.name-card-content {
+  text-align: center;
+  margin: 2rem 0.5rem;
+  text-decoration: none !important;
+}
+
+.name-card-content h2,
+h6 {
+  color: rgb(31, 105, 89);
+  font-weight: 100;
+}
+
+.side-nav {
+  background: rgb(253, 253, 253);
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  flex: 7;
+}
+
+.side-nav a {
+  margin: 0.5rem 0;
+  color: black;
+  text-decoration: none;
+}
+
+.side-nav a:hover {
+  background: lightgray;
+  margin: 0.5rem 0;
+  color: black;
+  text-decoration: none;
+}
+
+.showcase {
+  height: 100vh;
+  background: url("./img/aboutImg.jpg") no-repeat center center/cover;
+}
+
+.showcase h2 {
+  text-align: center;
+  padding: 20rem 20rem;
+}
+
+.about-content {
+  text-align: center;
+  margin: 5rem 3rem;
+
+  border: 1px solid red;
+}
+
+.skill-list {
+  border: 1px solid pink;
+  margin: 2rem 3rem;
+}
+
+.skill-icons {
+  display: flex;
+  align-items: center;
+}
+
+.skill-card {
+  flex: 1;
+}
+
+.skill-img img {
+  max-width: 10rem;
+  max-height: 10rem;
+}
+
+/* project section */
+.projects-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.projects-nav button {
+  height: 3rem;
+  display: inline-block;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.projects-nav button:hover {
+  background: #dbe7f1;
+  box-shadow: 0 0 10px #cccccc, 0 0 40px #cccccc, 0 0 80px #cccccc;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-card {
+  background: rgb(190, 190, 190);
+
+  text-align: center;
+  margin: 1rem 1rem;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+.project-img-container {
+  border: 1px solid red;
+}
+
+.project-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  bottom: 0;
+}
+
+/* education part */
+
+.education-card {
+  height: 20rem;
+  border: 1px solid orange;
+  margin: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+}
+
+.education-card div {
+  margin: 2rem;
+  flex: 1;
+}
+
+.contact {
+  height: 10rem;
+  border: 1px solid orange;
+  margin: 3rem 3rem;
+}
+
+.contact-button {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 4rem;
+  border: 1px solid orange;
+  margin: 3rem 3rem;
+}
+
+/* 
+Button effects section */
+.flash-button {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.flash-button:hover {
+  color: #255784;
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
