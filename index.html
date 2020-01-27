@@ -1,795 +1,632 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/spacelab/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-nl8CRcNYOGaXP68QRJeVTXCWAhwqBhRha0QbuubX1qDQpGT3GgclpvyzkR2JzyfZ"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/f38c2d792b.js"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Shixin Yang | Full Stack Developer</title>
 
-    <title>Steven Yang's Portfolio</title>
-  </head>
+  <!--if lt IE 9script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+    -->
+  <meta name="robots" content="index, follow" />
+  <meta name="google-site-verification" content="-3F1R8ekDXe8XFfCi7eIVfXOSWqlp_pWNQX2dfgKD4Y" />
+</head>
 
-  <body>
-    <div class="side-navbar">
-      <div class="name-card">
-        <a href="#content" class="name-card-content hide-on-small">
-          <h2>Shixin Yang</h2>
-          <hr />
-          <h6>Front End Developer</h6>
-          <h6>Software Engineer</h6>
+<body>
+  <!-- Navigation Menu-->
+  <nav class="hide-on-small-only">
+    <ul class="side-nav fixed section table-of-contents">
+      <li class="logo">
+        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#about"
+          class="brand-logo teal-text">
+          <h5>
+            Shixin Yang<span class="brown-text light">Software Engineer</span><span class="brown-text light">Full
+              Stack Developer</span>
+          </h5>
         </a>
-        <a href="#content" class="name-card-content hide-on-large">
-          <h2>Shixin Yang</h2>
-          <h6>Front End Developer</h6>
-        </a>
-      </div>
-      <div class="side-nav">
-        <a class="btn btn-primay" href="#about"
-          ><i class="fas fa-address-card"></i> About</a
-        >
-        <!-- <a class="btn btn-primay" href="#skills"
-          ><i class="fas fa-star"></i> Skills</a
-        > -->
-        <a class="btn btn-primay" href="#projects"
-          ><i class="fas fa-project-diagram"></i> Projects</a
-        >
-        <a class="btn btn-primay" href="#education"
-          ><i class="fas fa-graduation-cap"></i> Education</a
-        >
-        <a class="btn btn-primay" href="#contact"
-          ><i class="fas fa-phone-volume"></i> Contact</a
-        >
-        <a
-          target="_blank"
-          class="btn btn-primay"
-          href="https://drive.google.com/file/d/1hLCO93MuysccbrDhAiyHXkses_UfyuvJ/view?usp=sharing"
-          ><i class="far fa-file"></i> Resume</a
-        >
-      </div>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark cyan-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark indigo-text"><i
+            class="mdi-av-web small"></i><span>Projects</span></a>
+      </li>
+
+
+      <li class="bold">
+        <a aria-label="Navigate to the Education section" href="#education"
+          class="waves-effect waves-dark orange-text"><i class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Open my resume in a new tab"
+          href="https://drive.google.com/file/d/1Tx7r8b0sZEqs93UaAb-TVILePr0z4Cbp/view?usp=sharing" target="_blank"
+          class="waves-effect waves-dark grey-text text-darken-3"><i
+            class="mdi-action-description small"></i><span>Resume</span></a>
+      </li>
+     
+      
+    </ul>
+  </nav>
+  <nav class="hide-on-large only trigger z-depth-1">
+    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
+      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    <div class="name-title">
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#main" class="teal-text">Shixin
+        Yang</a><span class="brown-text light">Junior Software Engineer</span>
     </div>
+  </nav>
+  <nav class="hide-on-large only">
+    <ul id="slide-out" class="side-nav">
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark cyan-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark indigo-text"><i
+            class="mdi-av-web small"></i><span>Projects</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Contact section" href="#education" class="waves-effect waves-dark brown-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
 
-    <!-- right-side-content-section -->
-    <div class="content" id="content">
-      <div class="showcase">
-        <div class="showcase-text">
-          <h3>
-            Engaging, Learning
-          </h3>
-          <h3>
-            Improving, Achieving
-          </h3>
-          <p>Looking for junior front-end developer position</p>
+      <li class="bold">
+        <a aria-label="Open My Resume in a new tab"
+          href="https://drive.google.com/file/d/1Tx7r8b0sZEqs93UaAb-TVILePr0z4Cbp/view?usp=sharing" target="_blank"
+          class="waves-effect waves-dark grey-text text-darken-3"><i
+            class="mdi-action-description small"></i><span>Resume</span></a>
+      </li>
+     
+    </ul>
+  </nav>
+  <!-- Main Content-->
+  <main>
+
+    <section id="about" class="section scrollspy">
+      <h3 class="page-title white-text teal">About</h3>
+      
+      <div class="container">
+        <div class="card">
+          <div class="card-content">
+
+              <div class="useful-links">
+                <a aria-label="View on GitHub" href="http://github.com/stevenyangsx" target="_blank"
+                data-position="top" data-tooltip="View on GitHub"
+                class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a>
+           
+              <a aria-label="View on LinkedIn" href="https://www.linkedin.com/in/steven-yang-30063a193/" target="_blank"
+                data-position="top" data-tooltip="View on LinkedIn"
+                class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-linkedin"></i></a>
+              </div>
+             
+            
+            <h6>Professionla Ideas</h6>
+            <ul>
+              <li>
+                Self-motivated for improving
+              </li>
+
+              <li>
+                Team-playing to be more productivity
+              </li>
+              <li>
+                Coding is mainly about testing and revision
+              </li>
+              <li>Fundamentals are more difficult than we thought</li>
+
+            </ul>
+            <h6>Tech Stack</h6>
+            <ul>
+              <li>
+                Languages: Java, JavaScript, Python
+              </li>
+              <li>
+                Front-end: HTML5, CSS3, SaSS, Bootstrap, React, Redux
+              </li>
+              <li>
+                Back-end: Node.js, Express, Django, MySQL, MongoDB,
+              </li>
+              <li>
+                Others: NPM, Webpack, Docker, Git, Agile/Scrum, Unix/Linux Environment
+              </li>
+            </ul>
+            
+          </div>
+
         </div>
-      </div>
 
-      <!-- about-section -->
-      <div class="bar" id="about">
-        <h2>about</h2>
-      </div>
 
-      <div class="container text-center">
-        <div class="about-content">
-          <div class="about-card">
+
+
+
+
+
+      </div>
+    </section>
+
+    <section id="experience" class="section scrollspy">
+      <h3 class="page-title white-text teal">Experience</h3>
+      <div class="container">
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://sgc-media.com" target="_blank"><img alt="WeSpire logo" src="./assets/img/sgcMedia.png"
+                    class="responsive-img center-block" /></a>
+              </div>
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://sgc-media.com" target="_blank" class="teal-text hoverline">Snow
+                      Goose Media News Website</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text">Front-end Developer</div>
             <p>
-              I am a recently granduated student from Simon Fraser University
-              major in Computer Science with concentration of Computer System
-              and Infromation System. Currently, I'm focusing on web development
-              to become a full-stack developer. Desire to learn, team-work
-              friendly, independent problem solver. I also want to record my
-              growth path with this website just to motivate myself.
+              <em class="grey-text">News Website that provides convinience access to all news world-wild in Chinese with
+                potentially 5000 daily users.</em>
             </p>
+            <h6>Overview</h6>
+            <ul>
+              <li>
+                Worked in a collaborate 5 people team includes designer, front-end developer, back-end developer, and
+                tech-lead.
+              </li>
+              <li>
+                Lead front-end development, implemented state management and dynamic routing.
+              </li>
+              <li>
+                Built up SEO function and news filtering.
+              </li>
+              <li>Guide best practices around accessible, semantic UI/UX</li>
+              <li>
+                Stack: Gatsby.js / React / ContextAPI / SaSS / Contentful
+
+              </li>
+            </ul>
+            <h6>Accomplishments</h6>
+            <ul>
+              <li>
+                Website is in production with increasing daily visiting.
+              </li>
+              <li>
+                Editors of Snowgoose Media could add/edit new content with CMS without technical knowledge.
+              </li>
+
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>Otc 2019 - Dec 2019</span>
           </div>
         </div>
+
+
+
+
+
+
+
       </div>
+    </section>
 
-      <!-- projects-section -->
 
-      <div class="bar" id="projects">
-        <h2>Projects</h2>
-      </div>
-
-      <div class="projects">
-        <div class="projects-nav">
-          <button id="front-end">Front-end Ensentials</button>
-          <button id="react">React</button>
-          <button id="back-end">Back-end</button>
-          <button id="tools">DevOps/ Tools</button>
-          <button id="school-projects">School Projects</button>
-        </div>
-
-        <div class="projects-list">
-          <!-- <div class="project-card front-end">
-            <div class="project-img-container"></div>
-            <div class="project-title">
-              <h3>HTML5/CSS3 Ensentials</h3>
+    <section id="projects" class="section scrollspy">
+      <h3 class="page-title white-text teal">Projects</h3>
+      <div class="container">
+        <div class="row">
+          <!-- Interpol8r-->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Screenshot of Interpol8r web app" src="./assets/img/fakestore.png" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Fake Online Store<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Potential eCommerce web app with items browsing, searching, filtering function, and
+                  user authentication.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><strong>MERN</strong> Stack</li>
+                  <li><strong>Redux</strong> state management</li>
+                  <li><strong>Fakestore API</strong> as back end</li>
+                  <li><strong>Mobile</strong> friendly</li>
+                  <li>Items <strong>searching, browsing, filtering</strong></li>
+                  <li>User <strong>registration, authentication, shopping cart management</strong></li>
+                  <li><strong>Mobile</strong> friendly</li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit Interpol8r web app" href="https://mysterious-oasis-16008.herokuapp.com/" target="_blank"
+                    data-position="top" data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
+                      class="fa fa-external-link"></i></a><a aria-label="Visit the GitHub repo for Interpol8r project"
+                    href="https://github.com/StevenYangSX/Fake-Store" target="_blank" data-position="top"
+                    data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
             </div>
-            <hr />
-            <div class="project-details">
+          </div>
+          <!-- BlogSpire-->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Screenshot of BlogSpire web app" src="./assets/img/storeAPI.png" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Fakestore API<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  RESTful API for Fake online Store.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><strong>Express</strong> backend</li>
+
+                  <li>User <strong>authentication</strong> with <strong>JWT</strong></li>
+
+                  <li>Applied <strong>Mongoose and MongoDB</strong></li>
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit BlogSpire web app" href="https://quiet-dawn-64698.herokuapp.com/api"
+                    target="_blank" data-position="top" data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
+                      class="fa fa-external-link"></i></a><a aria-label="Visit the GitHub repo for BlogSpire project"
+                    href="https://github.com/StevenYangSX/Fake-Store-API" target="_blank" data-position="top"
+                    data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Code Island-->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Code Island logo" src="./assets/img/django.png" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Real Estate <i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Property Searching/listing website for a real estate company.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li>
+                    Full stack projects with <strong>Django, Postgresql</strong>
+                  </li>
+                  <li>
+                    Easy-to-use <strong>admin pages</strong>
+                  </li>
+                  <li>Deployment with <strong>Nginx Server</strong></li>
+
+                  <li><strong>Django-humanity </strong> for better UI</li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit Code Island website" href="http://159.65.75.136/" target="_blank"
+                    data-position="top" data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
+                      class="fa fa-external-link"></i></a><a aria-label="Visit the GitHub repo for Code Island project"
+                    href="https://github.com/StevenYangSX/realtor-app" target="_blank" data-position="top"
+                    data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Saved By the Text-->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Zach Morris from Saved by the Bell, on his clunky cell phone" src="./assets/img/stockAI.png"
+                  class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">AI Stock Manager<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Single-page App to check Stock trends and make predictions.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li>Built wiht <strong>React, Brain.js, Chart.js</strong></li>
+                  <li>Integrated <strong>Alpha Vantage API</strong></li>
+                  <li>Data <strong>visualization in JS</strong></li>
+                  <li><strong>JavaScript</strong> in different areas</li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit Saved By The Test web app" href="https://desolate-inlet-34885.herokuapp.com/"
+                    target="_blank" data-position="top" data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
+                      class="fa fa-external-link"></i></a><a
+                    aria-label="Visit the GitHub repo for Saved By the Text project"
+                    href="https://github.com/StevenYangSX/AI-Stock" target="_blank" data-position="top"
+                    data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Brownborg Studios-->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Brownborg Studios logo" src="./assets/img/sass3.png" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Social Web Theme<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A responsive, mobile-friendly social website theme
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><strong>Customized</strong> themes with SaSS</li>
+                  <li>Easy to change all colors</li>
+                  <li>Fully <strong>responsive</strong> designs</li>
+                  <li><strong>Grid </strong>and <strong>Flex box </strong>features</li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit Saved By The Test web app" href="https://stevenyangsx.github.io/Social-Network-Web-Theme-by-SaSS/dist/index.html"
+                    target="_blank" data-position="top" data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
+                      class="fa fa-external-link"></i></a><a
+                    aria-label="Visit the GitHub repo for Saved By the Text project"
+                    href="https://github.com/StevenYangSX/Social-Network-Web-Theme-by-SaSS" target="_blank" data-position="top"
+                    data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6th project -->
+
+
+          <!-- Brownborg Studios-->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Brownborg Studios logo" src="./assets/img/contact.png" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Contact Keeper<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A single-page wee app for keeping people's contact information
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><strong>MERN</strong> full-stack project</li>
+                  <li>Clean UI</li>
+                  <li>Fully <strong>responsive</strong> and mobile friendly</li>
+                  <li>User <strong>authentication </strong>and <strong>authorization</strong>supported</li>
+                  <li> <strong>Filter </strong> function was implemented</li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit Saved By The Test web app" href="https://thawing-badlands-76524.herokuapp.com/login"
+                    target="_blank" data-position="top" data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
+                      class="fa fa-external-link"></i></a><a
+                    aria-label="Visit the GitHub repo for Saved By the Text project"
+                    href="https://github.com/StevenYangSX/Contacts-Keeper" target="_blank" data-position="top"
+                    data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="education" class="section scrollspy">
+      <h3 class="page-title white-text teal">Education</h3>
+      <div class="container">
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+
+
               <p>
-                This project is a series of fundamentals of web development. It
-                reviewed all basic HTML5/ CSS3 concepts and focus on Flex-box
-                and Grid System.
+                <span class="card-title"><a href="http://www.sfu.ca" target="_blank" class="teal-text hoverline">
+                    Simon Fraser University</a></span>
               </p>
+
             </div>
-            <div class="project-links">
-              <button>Github</button>
-              <button>Link Here</button>
-            </div>
-          </div> -->
-          <div class="project-card front-end">
-            <div class="title">
-              <div class="project-img-container"></div>
-              <div class="project-title">
-                <h3>HTML5/CSS3 Ensentials</h3>
-              </div>
-              <hr />
-              <div class="project-details">
-                <p>
-                  This project is a series of fundamentals of web development.
-                  It reviewed all basic HTML5/ CSS3 concepts and focus on
-                  Flex-box and Grid System.
-                </p>
-              </div>
-              <div class="project-links">
-                <a
-                  class="btn btn-light"
-                  href="https://github.com/StevenYangSX/HTML5-CSS3-Fundamentals"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  class="btn btn-light"
-                  href="https://stevenyangsx.github.io/HTML5-CSS3-Fundamentals/index"
-                  target="_blank"
-                  ><i class="fab fa-chrome"></i
-                ></a>
-              </div>
-            </div>
+            <div class="role brown-text">Jan 2015 - Aug 2019</div>
+            <p>
+              <em class="grey-text">Burnaby, BC, Canada</em>
+            </p>
+            <h6>B.S. in Computer Science
+            </h6>
+
           </div>
 
-          <div class="project-card front-end">
-            <div class="title">
-              <div class="project-img-container"></div>
-              <div class="project-title">
-                <h3>Vanilla JavaScript Ensentials</h3>
-              </div>
-              <hr />
-              <div class="project-details">
-                <p>
-                  This series of single page applications built with vanilla
-                  JavaScript aims to practice Object-Oriented principle, DOM
-                  manipulation, local storage, and AJAX/Fetch API with HTTP
-                  requres
-                </p>
-              </div>
-              <div class="project-links">
-                <a
-                  class="btn btn-light"
-                  href="https://github.com/StevenYangSX/Vanilla-JavaScript-Ensentials"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  class="btn btn-light"
-                  href="https://stevenyangsx.github.io/Vanilla-JavaScript-Ensentials/"
-                  target="_blank"
-                  ><i class="fab fa-chrome"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card front-end">
-            <div class="title">
-              <div class="project-img-container">
-                <!-- <img
-                  src="./img/project.png"
-                  alt="Image Here"
-                  class="project-img"
-                /> -->
-              </div>
-              <div class="project-title">
-                <h3>Social Network Website Theme by Sass</h3>
-              </div>
-              <hr />
-              <div class="project-details">
-                <p>
-                  A web theme styled with SaSS. It has different Theme color to
-                  choose and all mixin and functions make the web responsive.
-                </p>
-              </div>
-              <div class="project-links">
-                <a
-                  class="btn btn-light"
-                  href="https://github.com/StevenYangSX/Social-Network-Web-Theme-by-SaSS"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  class="btn btn-light"
-                  href="https://stevenyangsx.github.io/Social-Network-Web-Theme-by-SaSS/dist/index.html"
-                  target="_blank"
-                  ><i class="fab fa-chrome"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card front-end">
-            <div class="title">
-              <div class="project-img-container">
-                <!-- <img
-                  src="./img/project.png"
-                  alt="Image Here"
-                  class="project-img"
-                /> -->
-              </div>
-              <div class="project-title">
-                <h3>jQuery Cheet</h3>
-              </div>
-              <hr />
-              <div class="project-details">
-                <p>
-                  jQuery is still an important part of front-end development
-                  even though it is fading. This project practices jQuery on DOM
-                  manipulation, API calls, and some animation. I will constantly
-                  update it as long as I learn or use some other 3rd party
-                  applicaitons rely on jQuery.
-                </p>
-              </div>
-              <div class="project-links">
-                <a
-                  class="btn btn-light"
-                  href="https://github.com/StevenYangSX/jQuery-Cheat-Sheet"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  class="btn btn-light"
-                  href="https://stevenyangsx.github.io/jQuery-Cheat-Sheet/"
-                  target="_blank"
-                  ><i class="fab fa-chrome"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="project-card front-end">
-            <div class="title">
-              <div class="project-img-container">
-              </div>
-              <div class="project-title">
-                <h3>Netflix Landing Page Copy</h3>
-              </div>
-              <hr />
-              <div class="project-details">
-                <p>
-                  This project copies Netflix official landing page without any
-                  frameworks. It amis to practice responsive web page
-                  develpment.
-                </p>
-              </div>
-              <div class="project-links">
-                <a
-                  class="btn btn-light"
-                  href="https://github.com/StevenYangSX/Netfilx-Landing-Page-Copy"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  class="btn btn-light"
-                  href="https://stevenyangsx.github.io/Netfilx-Landing-Page-Copy/"
-                  target="_blank"
-                  ><i class="fab fa-chrome"></i
-                ></a>
-              </div>
-            </div>
-          </div> -->
-
-          <div class="project-card react">
-            <div class="title">
-              <div class="project-img-container">
-                <!-- <img
-                  src="./img/project.png"
-                  alt="Image Here"
-                  class="project-img"
-                /> -->
-              </div>
-              <div class="project-title">
-                <h3>Fake Store</h3>
-              </div>
-              <hr />
-              <div class="project-details">
-                <p>
-                  A fake online shopping store designed for MERN stack
-                  full-stack development. This project is the client-side that
-                  consumes Fake-store API to support items browsing, user
-                  registration, login, and purchase items.
-                </p>
-              </div>
-              <div class="project-links">
-                <a
-                  class="btn btn-light"
-                  href="https://github.com/StevenYangSX/Fake-Store"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  class="btn btn-light"
-                  href="https://mysterious-oasis-16008.herokuapp.com/"
-                  target="_blank"
-                  ><i class="fab fa-chrome"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card react">
-            <div class="title">
-              <div class="project-img-container">
-                <!-- <img
-                  src="./img/project.png"
-                  alt="Image Here"
-                  class="project-img"
-                /> -->
-              </div>
-              <div class="project-title">
-                <h3>AI Stock Manager</h3>
-              </div>
-              <hr />
-              <div class="project-details">
-                <p>
-                  A simple application that checks and analizes stock price of
-                  last 90 days. Then using Machine-learing to predict future
-                  price and trends.
-                </p>
-              </div>
-              <div class="project-links">
-                <a
-                  class="btn btn-light"
-                  href="https://github.com/StevenYangSX/AI-Stock"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  class="btn btn-light"
-                  href="https://desolate-inlet-34885.herokuapp.com/"
-                  target="_blank"
-                  ><i class="fab fa-chrome"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card react">
-            <div class="title">
-              <div class="project-img-container">
-                <!-- <img
-                  src="./img/project.png"
-                  alt="Image Here"
-                  class="project-img"
-                /> -->
-              </div>
-              <div class="project-title">
-                <h3>Contact Keeper</h3>
-              </div>
-              <hr />
-              <div class="project-details">
-                <p>
-                  Keep contact information as you need. It is supported by its
-                  own API for user registration and authentication. User cloud
-                  easily add, delete, edit friends contacnt informatin.
-                </p>
-              </div>
-              <div class="project-links">
-                <a
-                  class="btn btn-light"
-                  href="https://github.com/StevenYangSX/Contacts-Keeper"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  class="btn btn-light"
-                  href="https://thawing-badlands-76524.herokuapp.com/"
-                  target="_blank"
-                  ><i class="fab fa-chrome"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card react">
-            <div class="title">
-              <div class="project-img-container">
-                <!-- <img
-                  src="./img/project.png"
-                  alt="Image Here"
-                  class="project-img"
-                /> -->
-              </div>
-              <div class="project-title">
-                <h3>Github User Finder</h3>
-              </div>
-              <hr />
-              <div class="project-details">
-                <p>
-                  A basic React application that check intended Github users and
-                  corresponding information.
-                </p>
-              </div>
-              <div class="project-links">
-                <a
-                  class="btn btn-light"
-                  href="https://github.com/StevenYangSX/React-Github-User-Finder"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  class="btn btn-light"
-                  href="https://stevenyangsx.github.io/React-Github-User-Finder/"
-                  target="_blank"
-                  ><i class="fab fa-chrome"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="project-card back-end">
-            <div class="project-img-container"></div>
-            <div class="project-title">
-              <h3>Python Crash Course</h3>
-            </div>
-            <hr />
-            <div class="project-details">
-              <p>
-                A 4-week course aims to get myself familar with Python,
-                especially Object-Oriented Design. Get ready for back-end
-                development.
-              </p>
-            </div>
-            <div class="project-links">
-              <button>Github</button>
-              <button>Link Here</button>
-            </div>
-          </div> -->
-          <div class="project-card back-end">
-            <div class="title">
-              <div class="project-img-container"></div>
-              <div class="project-title">
-                <h3>Python Crash Course</h3>
-              </div>
-              <hr />
-              <div class="project-details">
-                <p>
-                  A 4-week course aims to get myself familar with Python,
-                  especially Object-Oriented Design. Get ready for back-end
-                  development.
-                </p>
-              </div>
-              <div class="project-links">
-                <a
-                  class="btn btn-light"
-                  href="https://github.com/StevenYangSX/Python-Course"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card back-end">
-            <div class="title">
-              <div class="project-img-container"></div>
-              <div class="project-title">
-                <h3>Fake Store API</h3>
-              </div>
-              <hr />
-              <div class="project-details">
-                <p>
-                  This is back-end API based on Express designed for Fake Store
-                  online shop. It invovles MongoDB, user passwords hasing, and
-                  JWT authentication and Node.js routing. Different end points
-                  had been implemented.
-                </p>
-              </div>
-              <div class="project-links">
-                <a
-                  class="btn btn-light"
-                  href="https://github.com/StevenYangSX/Fake-Store-API"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  class="btn btn-light"
-                  href="https://quiet-dawn-64698.herokuapp.com/api"
-                  target="_blank"
-                  ><i class="fab fa-chrome"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card back-end">
-            <div class="title">
-              <div class="project-img-container"></div>
-              <div class="project-title">
-                <h3>Property Searching Master</h3>
-              </div>
-              <hr />
-              <div class="project-details">
-                <p style="font-size: 0.9rem;">
-                  A potential property searching website built with Django and
-                  Postgresql, which allows user to browse all listings of
-                  properties. Search function is also supported for specific
-                  requirements. Additionally, an easy-to-use admin page was
-                  implemented for realtors to add, modify, delete their
-                  resources. This project also involves deploying Django
-                  projects on Digital Ocean with Nginx server configuration.
-                </p>
-              </div>
-              <div class="project-links">
-                <a
-                  class="btn btn-light"
-                  href="https://github.com/StevenYangSX/realtor-app"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  class="btn btn-light"
-                  href="http://159.65.75.136/"
-                  target="_blank"
-                  ><i class="fab fa-chrome"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card back-end">
-            <div class="title">
-              <div class="project-img-container"></div>
-              <div class="project-title">
-                <h3>Greenwing Education Website</h3>
-              </div>
-              <hr />
-              <div class="project-details">
-                <p style="font-size: 0.9rem;">
-                  Designed and implemented official website for Greenwing
-                  Education. It provides useful admin function that admin users
-                  could easily change all content in the website. Changing
-                  pictures and text only require logging in and making the
-                  changes.
-                </p>
-              </div>
-              <div class="project-links">
-                <a
-                  class="btn btn-light"
-                  href="http://greenwingnet.com"
-                  target="_blank"
-                  ><i class="fab fa-chrome"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card tools">
-            <div class="project-img-container">
-              <!-- <img
-                src="./img/project.png"
-                alt="Image Here"
-                class="project-img"
-              /> -->
-            </div>
-            <div class="project-title">
-              <h3>First Project tools</h3>
-            </div>
-            <hr />
-            <div class="project-details">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Sapiente repellat dicta modi fugit aut asperiores reprehenderit,
-                eos at non soluta explicabo, nemo nobis deserunt quos,
-                perferendis saepe reiciendis pariatur! Odit.
-              </p>
-            </div>
-            <div class="project-links">
-              <a class="btn btn-light"><i class="fab fa-github"></i></a>
-              <a class="btn btn-light"><i class="fab fa-chrome"></i></a>
-            </div>
-          </div>
-
-          <div class="project-card school">
-            <div class="project-img-container">
-              <!-- <img
-                src="./img/project.png"
-                alt="Image Here"
-                class="project-img"
-              /> -->
-            </div>
-            <div class="project-title">
-              <h3>Weather Prediction</h3>
-            </div>
-            <hr />
-            <div class="project-details">
-              <p>
-                CMPT 318 Course Project that developed with Python(Numpy,
-                Pandas, sklearn and etc. ), which use Vancouver Airport Weather
-                data and picutures of the same spot in Downtown Vancouver to
-                analyse and predict future weather by machine learnig
-                algorithms.
-              </p>
-            </div>
-            <div class="project-links">
-              <a
-                class="btn btn-light"
-                href="https://github.com/StevenYangSX/Weather-Prediction"
-                target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="project-card school">
-            <div class="title">
-              <div class="project-img-container">
-                <!-- <img
-                  src="./img/project.png"
-                  alt="Image Here"
-                  class="project-img"
-                /> -->
-              </div>
-              <div class="project-title">
-                <h3>Android App: Walking Group</h3>
-              </div>
-              <hr />
-              <div class="project-details">
-                <p>
-                  CMPT 276 Course Project that developed by Android Studio. This
-                  application tracks users current position and reports it to
-                  who needs this information. Also, users can add friends and
-                  send messages to each other.
-                </p>
-              </div>
-              <div class="project-links">
-                <a
-                  class="btn btn-light"
-                  href="https://github.com/StevenYangSX/CMPT276-Project-WalkingGroup"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card school">
-            <div class="title">
-              <div class="project-img-container">
-                <!-- <img
-                  src="./img/project.png"
-                  alt="Image Here"
-                  class="project-img"
-                /> -->
-              </div>
-              <div class="project-title">
-                <h3>Modify Linux Kernal function</h3>
-              </div>
-              <hr />
-              <div class="project-details">
-                <p>
-                  CMPT 300,Operating System, course project which learns and
-                  modifies Linux kernal function. It focus on how kernal
-                  function works and how use can modify functions inside kernal.
-                </p>
-              </div>
-              <div class="project-links">
-                <a class="btn btn-light"><i class="fab fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card school">
-            <div class="title">
-              <div class="project-img-container">
-                <!-- <img
-                  src="./img/project.png"
-                  alt="Image Here"
-                  class="project-img"
-                /> -->
-              </div>
-              <div class="project-title">
-                <h3>Tokenizer</h3>
-              </div>
-              <hr />
-              <div class="project-details">
-                <p>
-                  A application built with C++ to parse C language and check for
-                  syntax error.
-                </p>
-              </div>
-              <div class="project-links">
-                <a
-                  class="btn btn-light"
-                  href="https://github.com/StevenYangSX/Tokenizer"
-                  target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Educatin-section -->
-
-      <div class="bar" id="education">
-        <h2>Education</h2>
+    <section id="contact" class="section scrollspy full-height">
+      <h3 class="page-title white-text teal">Contact</h3>
+      <div class="container">
+        <p>
+          <a aria-label="Email " href="mailto:yangshixin1206@gmail.com" data-position="top" data-tooltip="Email "
+            class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-envelope"></i><a
+              aria-label="Email" href="mailto:yangshixin1206@gmail.com"
+              class="hoverline">yangshixin1206@gmail.com</a></a>
+        </p>
+        <p>
+          <a aria-label="View on GitHub" href="http://github.com/stevenyangsx" target="_blank"
+            data-position="top" data-tooltip="View on GitHub"
+            class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i><a
+              aria-label=" on Github" href="http://github.com/stevenyangsx" target="_blank"
+              class="hoverline">github.com/stevenyangsx</a></a>
+        </p>
+        <p>
+          <a aria-label="View on LinkedIn" href="https://www.linkedin.com/in/steven-yang-30063a193/" target="_blank"
+            data-position="top" data-tooltip="View  on LinkedIn"
+            class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-linkedin"></i><a
+              aria-label=" on LinkedIn" href="https://www.linkedin.com/in/steven-yang-30063a193/" target="_blank"
+              class="hoverline">linkedin.com/in/steven</a></a>
+        </p>
       </div>
+    </section>
 
-      <div class="container education">
-        <div class="education-card">
-          <div class="school-name">
-            <h2>Simon Fraser University</h2>
-          </div>
-          <div class="address">
-            <h5>Burnaby, BC, Canada</h5>
-          </div>
-          <div class="degree">
-            <h5>B.S. in Computer Science</h5>
-          </div>
-        </div>
-      </div>
+  </main>
 
-      <!-- contact-section -->
-      <div class="bar" id="contact">
-        <h2>Contact</h2>
-      </div>
-      <div class="contact">
-        <div class="contact-button">
-          <a
-            href="https://www.linkedin.com/in/steven-yang-30063a193/"
-            target="_blank"
-            ><img class="icons" src="./img/linkedin.png" alt="" />
-          </a>
-          <a href="https://github.com/StevenYangSX" target="_blank"
-            ><img class="icons" src="./img/git.png" alt=""
-          /></a>
-          <a
-            href="https://www.facebook.com/profile.php?id=100007653738329"
-            target="_blank"
-            ><img class="icons" src="./img/facebook.png" alt=""
-          /></a>
-          <a href="mailto:yangshixin1206@gmail.com" target="_blank"
-            ><img class="icons" src="./img/gmail.png" alt=""
-          /></a>
-        </div>
-      </div>
-    </div>
+  <!--
+      Google Analytics
+      -------------------------------------------------
+      If you want to enable your own account, assign analyticsId to your
+      google analytics id, which should be the numbers following "UA-", e.g.
+      let analyticsId = "12345678-9"
+    -->
+  <script>
+    let analyticsId
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <script src="main.js"></script>
-  </body>
+    // If analytics id has been manually defined
+    if (analyticsId) {
+      // Initialize GA with local var
+      initGoogleAnalytics(analyticsId)
+    } else {
+      // Initialize GA with Netlify env var available via lamba function
+      fetch("/.netlify/functions/env_vars")
+        .then(getEnvVar)
+        .then(initGoogleAnalytics)
+        .catch(handleError)
+    }
+
+    // -------------------------------------------------
+    // Helper Functions
+    // --------------------------------------------------
+
+    function handleError(error) {
+      console.log("error", error)
+    }
+
+    function getEnvVar(response) {
+      // If the request was successful
+      if (response.ok) {
+        // Return the response text
+        return response.text()
+      } else {
+        // Return a rejected Promise object, triggering the .catch()
+        return Promise.reject(response)
+      }
+    }
+
+    // Set Up Google Analytics
+    function initGoogleAnalytics(analyticsId) {
+      if (analyticsId) {
+        // Inject the Google Analytics Tag Manager script into the DOM
+        analyticsUrl =
+          "https://www.googletagmanager.com/gtag/js?id=UA-" + analyticsId
+        var ref = document.getElementsByTagName("script")[0]
+        var script = document.createElement("script")
+        script.src = analyticsUrl
+        ref.parentNode.insertBefore(script, ref)
+
+        // Initialize Google Analytics
+        window.dataLayer = window.dataLayer || []
+
+        function gtag() {
+          dataLayer.push(arguments)
+        }
+        gtag("js", new Date())
+        gtag("config", "UA-" + analyticsId)
+      }
+    }
+  </script>
+
+  <!-- jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <!-- Materialize - Compiled and minified JavaScript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script>
+    // Materialize - Initializers
+    $(document).ready(function () {
+      $(".scrollspy").scrollSpy()
+      // Initialize collapse button
+      $(".button-collapse").sideNav({
+        menuWidth: 190, // Default is 240
+        edge: "left", // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      })
+    })
+  </script>
+
+  <!-- nothing to see here...-->
+  <!-- prettier-ignore -->
+  <!-- <small>
+    NETLIFY
+    ___ ___ ___ ___ ___
+    /\ \ /\__\ /\ \ /\__\ ___ /\__\
+    \:\ \ ___ /:/ _/_ \:\ \ /:/ _/_ ___ /\ \ /:/ _/_
+    \:\ \ /\__\ /:/ /\ \ \:\ \ /:/ /\__\ /\__\ \:\ \ /:/ /\__\
+    ___ /::\ \ /:/__/ /:/ /::\ \ ___ /::\ \ /:/ /:/ / /:/__/ \:\ \ /:/ /:/ _/_
+    /\ /:/\:\__\ /::\ \ /:/__\/\:\__\ /\ /:/\:\__\ /:/_/:/ / /::\ \ ___ \:\__\ /:/_/:/ /\__\
+    \:\/:/ \/__/ \/\:\ \__ \:\ \ /:/ / \:\/:/ \/__/ \:\/:/ / \/\:\ \__ /\ \ |:| | \:\/:/ /:/ /
+    \::/__/ ~~\:\/\__\ \:\ /:/ / \::/__/ \::/__/ ~~\:\/\__\ \:\ \|:| | \::/_/:/ /
+    \:\ \ \::/ / \:\/:/ / \:\ \ \:\ \ \::/ / \:\__|:|__| \:\/:/ /
+    \:\__\ /:/ / \::/ / \:\__\ \:\__\ /:/ / \::::/__/ \::/ /
+    \/__/ \/__/ \/__/ \/__/ \/__/ \/__/ ~~~~ \/__/
+  </small> -->
+</body>
+
 </html>
